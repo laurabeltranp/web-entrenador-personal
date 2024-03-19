@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+
+
+    <!-- Enlace con Bootstrap a través de un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) { // Cambia 50 según la cantidad de scroll que deseas
+                navbar.classList.add('transparent');
+            } else {
+                navbar.classList.remove('transparent');
+            }
+        });
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logo_belen.png" class="logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planes.html">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="incioSesion.html">Acceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Primera Sección -->
+    <section class="container-fluid seccion1">
+        <div class="row align-items-center justify-content-center" style="height: 70vh;">
+            <div class="col-md-6 d-flex flex-column align-items-center"> <!-- Centra contenido en dispositivos medianos -->
+                <h2 class="text-black mb-5">Ponte en forma conmigo</h2>
+                <a href="incioSesion.html" class="btn btn-danger">Comienza ahora</a>
+            </div>
+        </div>
+    </section>
+    <!--Separacion seccion1 y seccion2 -->
+    <div class="barra-emojis bg-light d-flex justify-content-around align-items-center py-4">
+        <div class="text-center">
+            <span class="emoji">&#x1F4B5;</span>
+            <p>Paga menos que una mensualidad de gimnasio</p>
+        </div>
+        <div class="text-center">
+            <span class="emoji">&#x1F3AF;</span>
+            <p>Logra tus objetivos con ayuda de un profesional</p>
+        </div>
+        <div class="text-center">
+            <span class="emoji">&#x23F2;</span>
+            <p>Tú decides cuánto entrenas</p>
+        </div>
+        <div class="text-center">
+            <span class="emoji">&#x2B50;</span>
+            <p>Testimonios verificados</p>
+        </div>
+    </div>
+    <!-- Segunda Sección - Carousel de Testimonios -->
+    <section class="container-fluid seccion2">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/testimonio1.png" class="d-block mx-auto testimonio-img" alt="Testimonio 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/testimonio2.png" class="d-block mx-auto testimonio-img" alt="Testimonio 2">
+                        </div>
+                        <!-- Agrega más items según tus necesidades -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tercera Sección - Planes -->
+    <section class="container my-5">
+        <h2>Planes</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="plan1.jpg" class="card-img-top" alt="Plan 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan 1</h5>
+                        <p class="card-text">Descripción del plan 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="plan2.jpg" class="card-img-top" alt="Plan 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan 2</h5>
+                        <p class="card-text">Descripción del plan 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="plan3.jpg" class="card-img-top" alt="Plan 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Plan 3</h5>
+                        <p class="card-text">Descripción del plan 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex justify-content-center">
+                        <li class="me-3"><a href="https://www.instagram.com/belenjifit/" target="_blank" class="text-decoration-none"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"  target="_blank" class="text-decoration-none"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-light" href="#">Inicio</a></li>
+                        <li><a class="text-light" href="#">Sobre Mí</a></li>
+                        <li><a class="text-light" href="#">Planes</a></li>
+                        <li><a class="text-light" href="#">Acceso</a></li>
+                        <li><a class="text-light" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2024 belenjifit</p>
+        </div>
+    </footer>
+
+    <!-- Enlaces a los archivos JavaScript de Bootstrap (jQuery y Bootstrap JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html

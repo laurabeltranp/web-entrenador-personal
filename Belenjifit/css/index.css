@@ -1,0 +1,82 @@
+body {
+    background-color: #e0f2f1; /* Establece el color de fondo de la página */
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
+}
+.logo {
+    max-width: 100px; 
+}
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+.navbar-nav .nav-item {
+    margin-right: 15px; 
+}
+.navbar.transparent {
+    background-color: rgba(255, 255, 255, 0.8) !important; /* Cambia la opacidad de la barra de navegación */
+}
+/*Estilos seccion1*/
+.seccion1 {
+    position: relative;
+    padding: 100px 0; 
+    background-image: url('/img/entrenador_personal.jpg');
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; /* Para asegurar que la imagen de fondo no se desborde */
+}
+
+.seccion1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.5); /* Color y opacidad del difuminado */
+}
+
+.seccion1 .row {
+    position: relative;
+    z-index: 1;
+}
+
+.seccion1 h2 {
+    color: #fff; 
+}
+
+.text-black {
+    color: #000; 
+}
+
+/* Barra entre seccion1 y 2*/
+.barra-emojis {
+    background-color: #DFE8F0; 
+    height: 125px; 
+
+}
+
+.emoji {
+    font-size: 40px; 
+    margin: 0 20px; 
+}
+
+.barra-emojis p {
+    font-size: 14px; 
+}
+/* Seccion 2 */
+.seccion2 {
+    background-color: #e0f2f1; 
+ 
+}
+.testimonio-img {
+    max-width: 500px; /* Establece el ancho máximo de las imágenes */
+    height: auto; /* Permite que la altura de las imágenes se ajuste automáticamente */
+}
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+}
